@@ -1,0 +1,29 @@
+<odoo>
+    <template id="barcode_scanner_layout" name="Barcode Scanner Layout">
+        <div class="oe_structure"/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="text-center mb-4">
+                        <h3 class="display-4">Acercar el código de barras o QR a la luz</h3>
+                    </div>
+                    <div class="card mx-auto" style="max-width: 500px;">
+                        <div class="card-body">
+                            <!-- Asegúrate de que el formulario no tenga un atributo 'action' -->
+                            <form id="barcode-form" class="js_barcode_scanner">
+                                <input class="form-control mb-2 js_barcode_input" type="text" id="barcode-input" name="barcode" placeholder="Scan barcode here" autofocus="autofocus"/>
+                                <button type="submit" id="barcode-submit" class="btn btn-primary btn-block js_barcode_submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Este div es donde se mostrará la información del producto después de la búsqueda -->
+            <div id="product-info" class="row">
+                <div class="col-lg-6 offset-lg-3 mt-4">
+                    <!-- La información del producto se insertará aquí por el JavaScript -->
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>
